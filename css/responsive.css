@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/*1240px以下*/
+/*1023px以下*/
+@media screen and (max-width: 1023px) {
+  .contents2 {
+    display: block;
+  }
+  .contents2 .description {
+    max-width: 696px;
+    margin: 0 auto;
+  }
+}
+
+/*834px以下*/
+/*480px以下*/
+/*# sourceMappingURL=responsive.css.map */
