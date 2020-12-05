@@ -1,0 +1,607 @@
+* {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: #484848;
+  margin: 0;
+  padding: 0;
+}
+
+
+// 2分割用クラス
+.two‐division {
+  width: 50%;
+  box-sizing: border-box;
+  padding-right: 64px;
+}
+// 3分割用クラス
+.trichotomy {
+  width: 33%;
+  box-sizing: border-box;
+  padding-right: 37px;
+}
+
+h2::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -24px;
+  width: 64px;
+  height: 2px;
+  background: rgb(118, 118, 118);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translate(-50%);
+}
+
+h2 {
+  position: relative;
+  width: 100%;
+  font-size: 60px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.description {
+  h3 {
+    font-size: 24px;
+    font-weight: 800;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    margin: 16px 0;
+    word-wrap: break-word;
+  }
+}
+
+// ホストさんのコメント部分
+.comment {
+  position: relative;
+  font-size: 32px;
+  font-weight: 300;
+
+  &::before {
+    content: '“';
+    position: absolute;
+    display: block;
+    top: -85px;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: "ＭＳ Ｐゴシック",sans-serif;
+    color: rgb(253, 179, 43);
+  }
+}
+
+// 「ホスト実践例をテェック」のボタン
+.host-exexample-btn {
+  font-size: 16px;
+  font-weight: 800;
+  border: solid 2px rgb(72, 72, 72);
+  border-radius: 4px;
+  padding: 13px 22px;
+  display: inline-block;
+}
+
+
+// ヘッダー
+header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 1;
+  border-bottom: solid 1px rgb(235, 235, 235);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .navi {
+      position: relative;
+      svg {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+      }
+      ul {
+        display: inline-block;
+        padding-left: 90px;
+        line-height: 80px;
+
+        li {
+          display: inline-block;
+          margin-right: 32px;
+          font-size: 14px;
+        }
+        .mark {
+          color: rgb(0, 132, 137);
+          border-bottom: 2px solid rgb(0, 132, 137);
+        }
+      }
+    }
+
+    .headerCont {
+      margin-top: 25px;
+      margin-right: 50px;
+
+      .text1 {
+        display: inline-block;
+        font-size: 13px;
+        color: #555;
+      }
+      .headerEstimation {
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 800;
+        margin-left: 8px;
+        margin-right: 16px;
+      }
+      .signin-btn1 {
+        display: inline-block;
+        background: rgb(219, 55, 66);
+        color: #fff;
+        font-size: 14px;
+        padding: 9px 16px;
+        border-radius: 4px;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// contents1
+.contents1 {
+  position: relative;
+  background-image: url("photo1.jpg");
+  background-size: cover;
+  width: 100%;
+  min-height: 600px;
+
+  .prospect {
+    position: absolute;
+    top: 78px;
+    right: 92px;
+    background: #fff;
+    max-width: 460px;
+    padding: 32px;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+    h1 {
+      font-size: 40px;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    input {
+      width: 100%;
+      border-radius: 4px;
+      font-size: 16px;
+      padding: 11px;
+      box-sizing: border-box;
+      border: solid 1px #eeeeee;
+      margin-bottom: 10px;
+    }
+
+    input:focus {
+      outline: none;
+      border: solid 1px rgb(0, 132, 137);
+    }
+
+    select {
+      -webkit-appearance: none;
+      appearance: none;
+      font-size: 16px;
+      padding: 11px;
+      border: solid 1px #eeeeee;
+      box-sizing: border-box;
+
+      option {
+        font-size: 10px;
+      }
+    }
+
+    select:focus {
+      outline: none;
+      border: solid 1px rgb(0, 132, 137);
+    }
+
+    .type {
+      width: 55%;
+    }
+
+    .number {
+      width: auto;
+    }
+
+    .text2 {
+      display: inline-block;
+      font-size: 13px;
+      color: #555;
+    }
+    .estimation {
+      display: inline-block;
+      font-size: 40px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    .signin-btn2 {
+      width: 100%;
+      color: #fff;
+      background: rgb(255, 90, 95);
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: 800;
+      text-align: center;
+      padding: 10px 22px;
+      cursor: pointer;
+      box-sizing: border-box;
+    }
+  }
+}
+
+// contents2
+.contents2 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1032px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// contents3
+.contents3 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1032px;
+  margin-top: 100px;
+  margin-bottom: 230px;
+  margin-left: auto;
+  margin-right: auto;
+
+  a {
+    color: rgb(0, 132, 137);
+    font-weight: 300;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// contents4
+.contents4 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1032px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .supplement {
+    color: rgb(118, 118, 118);
+    margin: 30px 0;
+  }
+
+  img {
+    position: relative;
+    top: -90px;
+    width: 516px;
+    height: 516px;
+  }
+
+
+}
+.contents5 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1032px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+
+  p {
+    line-height: 28px;
+    font-weight: 300;
+    margin: 16px 0;
+  }
+
+  ul {
+    li {
+      margin-bottom: 16px;
+      font-weight: 300;
+
+      span {
+        color: rgb(0, 132, 137);
+        padding-right: 10px;
+        font-size: 23px;
+        font-weight: 200;
+      }
+    }
+  }
+
+  a {
+    color: rgb(0, 132, 137);
+    font-weight: 300;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// contents6
+.contents6 {
+  max-width: 1032px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 160px;
+
+  img {
+    width: 100%;
+  }
+}
+
+// contents7
+.contents7 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1032px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 150px;
+
+  a {
+    color: rgb(0, 132, 137);
+    font-weight: 300;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// contents8
+.contents8 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1032px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
+  img {
+    position: relative;
+    top: -90px;
+    width: 516px;
+    height: 516px;
+  }
+
+  .supplement {
+    color: rgb(118, 118, 118);
+    margin: 30px 0;
+  }
+}
+
+// contents9
+.contents9 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1032px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 190px;
+
+  .numeric-data {
+    padding-right: 0;
+
+    h3 {
+      font-size: 60px;
+      font-weight: normal;
+      text-align: center;
+    }
+    p {
+      margin: 16px 0;
+      font-weight: 300;
+      text-align: center;
+    }
+  }
+}
+
+// contents10
+.contents10 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1032px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 170px;
+
+  a {
+    color: rgb(0, 132, 137);
+    font-weight: 300;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// contents11
+.contents11 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1032px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+
+  a {
+    display: block;
+    width: 100%;
+    color: rgb(0, 132, 137);
+    font-size: 18px;
+    font-weight: 300;
+    padding: 24px 0;
+    border-bottom: solid 1px rgb(235, 235, 235);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// contents12
+.contents12 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1032px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+
+  h3 {
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  img {
+    width: 100%;
+  }
+  h4 {
+    margin: 15px 0;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 200;
+  }
+  .detail {
+    color: rgb(0, 132, 137);
+    margin-top: 10px;
+  }
+}
+
+// contents13
+.contents13 {
+  position: relative;
+  background-image: url("photo8.jpg");
+  background-position: center;
+  width: 100%;
+  height: 440px;
+  margin-bottom: 110px;
+
+  .invitation {
+    position: absolute;
+    top: 96px;
+    left: 60px;
+    width: 450px;
+
+    p {
+      color: #fff;
+      font-size: 60px;
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+    a {
+      padding: 15px 24px;
+      background: #fff;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: 800;
+    }
+  }
+}
+
+// フッター
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1032px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .footer-menu {
+    width: 25%;
+    box-sizing: border-box;
+
+    h5 {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      li {
+        margin-bottom: 4px;
+
+        a {
+          font-size: 14px;
+          font-weight: normal;
+          color: rgb(118, 118, 118);
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-submenu {
+    position: relative;
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 50px;
+    padding-top: 16px;
+    border-top: solid 1px rgb(235, 235, 235);
+
+    svg {
+      position: absolute;
+      top: 30px;
+    }
+
+    .footer-submenu-cont {
+      display: inline-block;
+      margin-left: 30px;
+      a {
+        font-size: 14px;
+        font-weight: normal;
+        color: rgb(118, 118, 118);
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      p {
+        font-size: 14px;
+        font-weight: normal;
+        color: rgb(118, 118, 118);
+      }
+    }
+
+    .icon {
+      float: right;
+
+      i {
+        font-size: 20px;
+        color: rgb(118, 118, 118);
+        padding: 0 8px;
+      }
+      i:hover {
+        cursor: pointer;
+      }
+    }
+
+  }
+}
